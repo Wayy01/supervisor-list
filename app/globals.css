@@ -74,3 +74,40 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Update the date input styles to be more subtle */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  height: 15px;
+  left: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  opacity: 1;
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #E5E7EB;
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #D1D5DB;
+  }
+}
+
+
